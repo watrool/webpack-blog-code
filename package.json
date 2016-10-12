@@ -7,8 +7,8 @@
     "postinstall": "rimraf typings & typings install",
     "clean": "rimraf dist",
     "bundle": "rollup -c",
-    "6to5": "babel dist/app.js --out-file dist/app2.js",
-    "minify": "uglifyjs dist/app2.js --output dist/app2.min.js",
+    "6to5": "babel dist/app-es6.js --out-file dist/app.js",
+    "minify": "uglifyjs dist/app.js --screw-ie8 --compress --mangle --output dist/app.min.js",
     "build": "npm run clean && npm run bundle && npm run 6to5 && npm run minify",
     "serve": "npm run build && lite-server"
   },

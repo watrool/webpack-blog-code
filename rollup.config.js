@@ -4,7 +4,8 @@ import alias from 'rollup-plugin-alias';
 
 export default {
   entry: 'src/main.ts',
-  dest: 'dist/app.js',
+  dest: 'dist/app-es6.js',
+  format: 'iife',
   treeshake: true,
   plugins: [
     typescript(),
