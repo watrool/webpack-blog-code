@@ -4,7 +4,6 @@
   "description": "Code example for blog post",
   "main": "dist/app.js",
   "scripts": {
-    "postinstall": "rimraf typings & typings install",
     "clean": "rimraf dist",
     "build": "npm run clean && rollup -c",
     "serve": "npm run build && lite-server"
