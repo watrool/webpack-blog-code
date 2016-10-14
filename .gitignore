@@ -4,3 +4,13 @@ dist/
 typings/
 .vscode/
 npm-debug.log
+
+*.js.map
+src/**/*.js
+*.ngfactory.ts
+src/**/*.ngfactory.ts
+*.metadata.json
+src/**/*.metadata.json
+*.aot.css.ts
+src/**/*.aot.css.ts
+aot/
